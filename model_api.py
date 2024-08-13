@@ -11,13 +11,18 @@ def query(model, payload):
     elif model == 'finbert':
         API_URL = "https://api-inference.huggingface.co/models/ProsusAI/finbert"
 
-    headers = {"Authorization": st.secrets['auth_token']}
+    ### Please replace st.secrets['auth_token'] with "Bearer [HF_TOKEN]" if running locally, else you will see a 'secrets' error ###
+    headers = {"Authorization": "Bearer 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"}
+    
+    try:
+        response = requests.post(API_URL, headers=headers, json={"inputs": payload})
+        output = response.json()
 
-    response = requests.post(API_URL, headers=headers, json={"inputs": payload})
-    output = response.json()
-
-    if model == 'distilroberta' or model == 'finbert':
-        output = [max(output[0], key=lambda x:x['score'])]
+        if model == 'distilroberta' or model == 'finbert':
+            output = [max(output[0], key=lambda x:x['score'])]
+    
+    except requests.exceptions.RequestException as e:
+        raise SystemExit(e)
 
     return output
 
