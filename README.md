@@ -41,7 +41,7 @@ Deploy Locally - Docker Containers
 
 Two Ways to Deploy Locally
 
-1. Current Way: Using 'docker compose'
+### Current Way: Using 'docker compose'
 
 Originally created from the self-constructed Dockerfile using
 
@@ -56,11 +56,12 @@ $ docker compose up --build
 Your application will be available at http://localhost:8501
 
 
-2. Other Way: Using self-constructed Dockerfile
+### Other Way: Using self-constructed Dockerfile
 
 Self-constructed Dockerfile contents:
 
-------------------------------------
+
+```
 FROM python:3.12
 
 COPY . /fin_app
@@ -74,7 +75,7 @@ EXPOSE 8501
 ENTRYPOINT ["streamlit","run"]
 
 CMD ["app.py"]
-------------------------------------
+```
 
 Create the Docker Image:
 
@@ -126,11 +127,15 @@ $ python3 -m pip install -r requirements.txt
 
 Run App
 
-`$ python3 -m streamlit run app.py`
+```
+$ python3 -m streamlit run app.py
+```
 
 Keep app running, even if you close the EC2 instance window/terminal
 
-`$ nohup python3 -m streamlit run app.py`
+```
+$ nohup python3 -m streamlit run app.py
+```
 
 Look for process ID and kill the app, to prevent AWS charges
 ```
