@@ -21,4 +21,4 @@ def query(model, payload):
 
     return output
 
-print(query(model='finbert', payload="Stocks fell really hard today."))
+#print(query(model='finbert', payload="Stocks fell really hard today."))
