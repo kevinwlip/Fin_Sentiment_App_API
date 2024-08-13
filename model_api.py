@@ -1,7 +1,5 @@
+import streamlit as st
 import requests
-
-def top(dict, value):
-    return (k for k,v in dict.iteritems() if max(v))
 
 def query(model, payload):
 
@@ -12,7 +10,7 @@ def query(model, payload):
     elif model == 'finbert':
         API_URL = "https://api-inference.huggingface.co/models/ProsusAI/finbert"
 
-    headers = {"Authorization": "Bearer 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"}
+    headers = {"Authorization": st.secrets["auth_token"]}
 
     response = requests.post(API_URL, headers=headers, json={"inputs": payload})
     output = response.json()
