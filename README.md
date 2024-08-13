@@ -39,7 +39,7 @@ Examples of the Application are in the 'img' folder
 Deploy Locally - Docker Containers
 -----------------------------------
 
-Two Ways to Deploy Locally
+### Two Ways to Deploy Locally
 
 ### Current Way: Using 'docker compose'
 
