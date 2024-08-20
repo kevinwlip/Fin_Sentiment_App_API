@@ -2,7 +2,7 @@
 README
 ======
 
-This is a Financial Sentimental Prediction Application using HuggingFace Inference API (**Paid, Disabled Now**) hosted on Streamlit
+This is a Financial Sentimental Prediction Application using HuggingFace Inference API (**Paid, Disabled Now**) and hosted on Streamlit
 
 Streamlit - [Financial Sentiment Analysis App](https://finsentimentappapi.streamlit.app)
 
