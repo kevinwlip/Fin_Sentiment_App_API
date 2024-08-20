@@ -4,11 +4,11 @@ README
 
 This is a Financial Sentimental Prediction Application using HuggingFace Inference API (Paid, disabled now) hosted on Streamlit
 
-Streamlit - [Financial Sentiment Analysis App](https://finsentimentappapi.streamlit.app/)
+Streamlit - [Financial Sentiment Analysis App](https://finsentimentappapi.streamlit.app)
 
-Machine Learning Models created by myself and are hosted on HuggingFace - https://huggingface.co/kevinwlip
+Machine Learning Models created by myself and are hosted on [HuggingFace](https://huggingface.co/kevinwlip)
 
-GitHub - https://github.com/kevinwlip
+[GitHub](https://github.com/kevinwlip)
 
 
 Repository
@@ -37,7 +37,7 @@ Examples of the Application are in the 'img' folder
 Deploy Locally - Docker Containers
 -----------------------------------
 
-## First install Docker - https://www.docker.com/
+## First install [Docker](https://www.docker.com)
 
 ### Two Ways to Deploy Locally
 
