@@ -6,11 +6,9 @@ This is a Financial Sentimental Prediction Application using HuggingFace Inferen
 
 Streamlit - [Financial Sentiment Analysis App](https://finsentimentappapi.streamlit.app/)
 
-Machine Learning Models created by myself and are hosted on HuggingFace
+Machine Learning Models created by myself and are hosted on HuggingFace - https://huggingface.co/kevinwlip
 
 GitHub - https://github.com/kevinwlip
-
-HuggingFace - https://huggingface.co/kevinwlip
 
 
 Repository
