@@ -58,7 +58,7 @@ with st.container(border=True):
     with pie:
         sentiment_types = st.selectbox('Sentiment Type', ['Negative', 'Positive', 'Neutral'], label_visibility='collapsed')
         
-        fig = px.pie(pie_df, values=sentiment_types, names='Model', title=f'Number of {sentiment_types} types', category_orders={"Model": ["Kip", "DistilRoberta", "Finbert"]} , height=300, width=200)
+        fig = px.pie(pie_df, values=sentiment_types, names='Model', title=f'Number of {sentiment_types} types', category_orders={"Model": ["Kip", "DistilRoberta", "Finbert"]}, height=300, width=200)
         fig.update_layout(margin=dict(l=100, r=0, t=30, b=0), font=dict(size=16), hoverlabel=dict(font_size=16), legend=dict(font=dict(size=16)))
         st.plotly_chart(fig, use_container_width=True)
 
