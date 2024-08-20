@@ -37,11 +37,11 @@ Examples of the Application are in the 'img' folder
 Deploy Locally - Docker Containers
 -----------------------------------
 
-### First install [Docker](https://www.docker.com)
+### 1. First install [Docker](https://www.docker.com)
 
-### Two Ways to Deploy Locally
+### 2. Two Ways to Deploy Locally
 
-### Current Way: Using 'docker compose'
+### a. Current Way: Using 'docker compose'
 
 Originally created from the self-constructed Dockerfile using
 ```
@@ -57,7 +57,7 @@ $ docker compose up --build
 Your application will be available at http://localhost:8501
 
 
-### Other Way: Using self-constructed Dockerfile
+### b. Other Way: Using self-constructed Dockerfile
 
 Self-constructed Dockerfile contents:
 
